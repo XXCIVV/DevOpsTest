@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ความสูงแบบเต็มจอ */
+    background-image: url('../assets/bgn-image.jpg'); /* URL ของภาพพื้นหลัง */
+    background-size: cover; /* ปรับขนาดให้เต็มพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่กลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    margin: 0;
+    color: #ffffff; /* สีข้อความ */
+    ;
+}
+
+
+.login-container {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: none;
+}
+.login-container img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; /* ขนาดใหญ่ขึ้น */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.login-container img:hover {
+    transform: scale(1.1); /* ขยายรูปเล็กน้อยเมื่อ hover */
+}
+.register-container {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: none;
+}
+.register-container img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px; /* ขนาดใหญ่ขึ้น */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.register-container img:hover {
+    transform: scale(1.1); /* ขยายรูปเล็กน้อยเมื่อ hover */
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00ffcc;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ffcc;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #009f99;
+    transform: translateY(-2px);
+}
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #00ffcc;
+    cursor: pointer;
+    text-decoration: none;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.register {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #00ffcc;
+    cursor: pointer;
+    text-decoration: none;
+}
+.register:hover {
+    text-decoration: underline;
+}
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}.success {
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 10px;
+}
+.switch {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #00ffcc;
+}
+.switch:hover {
+    text-decoration: underline;
+}
